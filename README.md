@@ -1,4 +1,4 @@
-# MediX : Balancing Your Physical and Mental Health
+# MediX
 ![Feature 1](https://github.com/medixapp/bangkit-capstone-project/blob/main/assets/medix1.png)
 
 # About
