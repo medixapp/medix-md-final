@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardCornerRadius="16dp"
+    android:backgroundTint="@color/green85"
+    app:cardUseCompatPadding="true"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_titledisease"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fever"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            app:layout_constraintBottom_toTopOf="@id/tv_descdis"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_descdis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/descfever"
+            android:lineHeight="24dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tv_penyebab"
+            app:layout_constraintTop_toBottomOf="@id/tv_titledisease"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_penyebab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/penyebab"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginStart="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_descdis"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_desc_penyebab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/descfever"
+            android:lineHeight="24dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_penyebab"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_akurasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tingkat_akurasi"
+            android:lineHeight="24dp"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_desc_penyebab"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_confidence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_100"
+            android:lineHeight="24dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_akurasi"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <Button
+            android:id="@+id/btn_medication"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/obat"
+            android:backgroundTint="@color/darkgreen25"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_confidence"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

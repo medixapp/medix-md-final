@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MediX" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor">@color/green70</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/green85</item>
+        <item name="colorOnPrimary">@color/green70</item>
+    </style>
+
+    <style name="Base.Theme.Navbar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor">@color/green70</item>
+        <item name="itemIconTint">@color/green70</item>
+        <item name="itemTextColor">@color/green70</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/green85</item>
+        <item name="colorOnPrimary">@color/green70</item>
+    </style>
+
+    <style name="Theme.MediX" parent="Base.Theme.MediX" />
+
+</resources>

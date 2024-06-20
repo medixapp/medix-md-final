@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:paddingBottom="?attr/actionBarSize"
+    android:theme="@style/Base.Theme.MediX"
+    tools:context=".ui.nav.home.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_to_medix"
+            android:fontFamily="@font/poppins"
+            android:textSize="20sp"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <ImageView
+            android:id="@+id/img_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_home"
+            app:layout_constraintBottom_toTopOf="@id/tv_homesymptoms"
+            app:layout_constraintTop_toBottomOf="@id/tv_home"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_homesymptoms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tolong_gejala"
+            android:fontFamily="@font/poppins"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@id/ti_symptoms"
+            android:layout_marginStart="24dp"
+            app:layout_constraintTop_toBottomOf="@id/img_home"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_symptoms"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_homesymptoms"
+            app:layout_constraintBottom_toTopOf="@id/btn_prediction"
+            app:boxCornerRadiusTopStart="5dp"
+            app:boxCornerRadiusTopEnd="5dp"
+            app:boxStrokeColor="@color/green80"
+            app:boxCornerRadiusBottomStart="5dp"
+            app:boxCornerRadiusBottomEnd="5dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+
+            <EditText
+                android:id="@+id/et_symptoms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_et_home"
+                android:ems="10"
+                android:textColor="@color/black"
+                android:lines="8"
+                android:inputType="textMultiLine"
+                android:gravity="top" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_prediction"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/button_shadow"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/analyze"
+            android:textColor="@color/grey15"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="30dp"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ti_symptoms" />
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

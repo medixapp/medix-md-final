@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MediX</string>
+    <string name="medix">MediX</string>
+    <string name="welcomewords">Quickly identify diseases and appropriate treatments based on your symptoms. Get immediate medical advice and suggested actions.</string>
+    <string name="get_started">Get Started</string>
+    <string name="hello_login">Hello,</string>
+    <string name="welcome_login">Welcome to MediX</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="login_underline"><u>Login</u></string>
+    <string name="dontacc">Don\'t have an account?</string>
+    <string name="sign_up"><u>Sign Up</u></string>
+    <string name="hello_signup">Hello there,</string>
+    <string name="create_an_account">Create an Account</string>
+    <string name="username">Username</string>
+    <string name="have_account">Already have an account?</string>
+    <string name="title_home">Home</string>
+    <string name="title_chat">Chat</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_activity_nav">NavActivity</string>
+    <string name="fever">Fever</string>
+    <string name="descfever">Fever is an increase in body temperature above 38°C. This condition may indicate the presence of a disease or specific condition in the body.</string>
+    <string name="medication">Medication</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="welcome_to_medix">Welcome to MediX</string>
+    <string name="write_your_symptoms_here">Write your symptoms here:</string>
+    <string name="analyze">Analyze</string>
+    <string name="log_out">Logout</string>
+    <string name="language">Language</string>
+    <string name="rebecca">Rebecca</string>
+    <string name="emailprofile">rebecca@gmail.com</string>
+    <string name="account">Account</string>
+    <string name="title_article">Antibiotics are drugs to treat or prevent bacterial infections</string>
+    <string name="article">Article</string>
+    <string name="description">Description</string>
+    <string name="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="sign_up_noU">Sign Up</string>
+    <string name="penyebab">Cause</string>
+    <string name="_100">100%</string>
+    <string name="tolong_gejala">Please enter your symptoms here:</string>
+    <string name="prediksi_penyakit">Disease Prediction</string>
+    <string name="tingkat_akurasi">Accuracy Rate</string>
+    <string name="obat">Medicine</string>
+    <string name="rekomendasi_obat">Medicine Recommendation</string>
+    <string name="change_profile_picture">Change Profile Picture</string>
+    <string name="save">Save</string>
+    <string name="message">Message</string>
+    <string name="empty_description_warning">Please upload an image file first.</string>
+    <string name="predict">Predict</string>
+    <string name="ganti_bahasa">Change Language</string>
+    <string name="tulis_disini">Type here...</string>
+
+</resources>
